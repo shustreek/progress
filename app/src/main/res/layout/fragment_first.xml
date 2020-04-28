@@ -10,7 +10,7 @@
         android:id="@+id/button_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,4 +38,13 @@
         app:layout_constraintTop_toBottomOf="@+id/textview_first"
         tools:cpb_progress="40"
         tools:cpb_value="40%" />
+
+    <com.amachikhin.testapplication.widget.LightProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distance"
+        tools:lpb_progress="90"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,16 +13,20 @@ import kotlinx.android.synthetic.main.fragment_first.*
  */
 class FirstFragment : Fragment() {
 
-    private val timer = object : CountDownTimer(10_090L, 1_000L) {
+    private val timer = object : CountDownTimer(10_090L, 100L) {
         override fun onFinish() {
-            distance.setProgress(0F)
-            distance.setValue("0%")
+            distance.setProgress(100F)
+            distance.setValue("100%")
+
+            progress.progress = 100
         }
 
         override fun onTick(p0: Long) {
-            val progress = p0 / 100F
-            distance.setProgress(progress)
-            distance.setValue("${progress.toInt()}%")
+            val scale = 100 - p0 / 100
+            distance.setProgress(scale.toFloat())
+            distance.setValue("${scale.toInt()}%")
+
+            progress.progress = scale.toInt()
         }
 
     }
@@ -39,7 +43,7 @@ class FirstFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         button_first.setOnClickListener {
-//            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            //            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
             timer.cancel()
             timer.start()
         }

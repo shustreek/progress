@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LightProgressBar">
+        <attr name="lpb_indicator_height" format="dimension" />
+        <attr name="lpb_bar_height" format="dimension" />
+        <attr name="lpb_text_size" format="dimension" />
+
+        <attr name="lpb_filled_section_color" format="color" />
+        <attr name="lpb_unfilled_section_color" format="color" />
+        <attr name="lpb_text_color" format="color" />
+
+        <attr name="lpb_progress" format="integer" />
+    </declare-styleable>
+
+    <dimen name="lpb_indicator_height">36dp</dimen>
+    <dimen name="lpb_bar_height">24dp</dimen>
+
+    <color name="lpb_filled_section_color">@color/green</color>
+    <color name="lpb_unfilled_section_color">@color/gray</color>
+    <color name="lpb_text_color">@color/white</color>
+
+    <dimen name="lpb_text_size">16dp</dimen>
+</resources>
