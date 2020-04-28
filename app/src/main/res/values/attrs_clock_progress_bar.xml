@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockProgressBar">
+        <attr name="cpb_color" format="color" />
+        <attr name="cpb_progress" format="float" />
+        <attr name="cpb_icon" format="reference" />
+        <attr name="cpb_title" format="string" />
+        <attr name="cpb_value" format="string" />
+        <attr name="cpb_text_color" format="color"/>
+        <attr name="cpb_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="large" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <dimen name="cpb_progress_size">40dp</dimen>
+    <dimen name="cpb_progress_size_large">90dp</dimen>
+    <dimen name="cpb_icon_size">20dp</dimen>
+    <dimen name="cpb_icon_size_large">35dp</dimen>
+</resources>

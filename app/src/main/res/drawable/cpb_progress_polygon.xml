@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="90dp"
+    android:height="91dp"
+    android:viewportHeight="146"
+    android:viewportWidth="143">
+    <group >
+        <path
+            android:name="progress"
+            android:pathData="M86.8,8.5l28.7,15.8c14.6,8.1,23.7,23.4,23.7,40.1V84.5c0,16.7,-9.1,32,-23.7,40.1L94.1,136.4c-13.7,7.6,-30.5,7.6,-44.2,0L28.5,124.6C13.9,116.5,4.8,101.2,4.8,84.5V64.4c0,-16.7,9.1,-32,23.7,-40.1L57.2,8.5c9.2,-5.1,20.4,-5.1,29.6,0Z"
+            android:strokeColor="#06B76A"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeWidth="7.7"
+            android:trimPathStart="0.1" />
+    </group>
+</vector>

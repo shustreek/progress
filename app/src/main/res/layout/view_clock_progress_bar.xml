@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:paddingEnd="4dp"
+    android:paddingStart="4dp"
+    tools:ignore="ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp">
+
+        <ImageView
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/cpb_progress_size"
+            android:layout_height="@dimen/cpb_progress_size"
+            android:adjustViewBounds="true"
+            android:background="@drawable/cpb_background"
+            tools:src="@drawable/cpb_progress_polygon" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/cpb_icon_size"
+            android:layout_height="@dimen/cpb_icon_size"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/ic_road" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/progress"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Text.Caption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/distance_text" />
+
+        <TextView
+            android:id="@+id/value"
+            style="@style/Text.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1,89 км" />
+    </LinearLayout>
+</RelativeLayout>
