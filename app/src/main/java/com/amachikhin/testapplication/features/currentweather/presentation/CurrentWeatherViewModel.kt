@@ -23,9 +23,6 @@ class CurrentWeatherViewModel @Inject constructor(
 
     init {
         interactor.setupInteractorOut(this)
-    }
-
-    override fun onStart() {
         interactor.loadWeather()
     }
 
