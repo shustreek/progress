@@ -11,4 +11,9 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="distance_text">Расстояние</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="next">Next</string>
+
+    <string name="cw_label">Погода в городе</string>
+    <string name="cw_temp">%.2f℃</string>
 </resources>
